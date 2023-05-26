@@ -4,6 +4,7 @@
 var tableBody = document.getElementById('repo-table');
 var fetchButton = document.getElementById('fetch-button');
 function getApi() {
+    tableBody.innerHTML='';
     var input = document.getElementById('start');
     var date = input.value;
     var requestUrl = 'https://api.nytimes.com/svc/search/v2/articlesearch.json?q=election&api-key=pQodcmInL5JLGLqj8JrP6mVzGiqtek2K&fq=pub_date:(' + date+')';
@@ -12,7 +13,8 @@ function getApi() {
             return response.json();
         })
         .then(function (data) {
-            console.log(data)
+            console.log(data) 
+           
             for (var i = 0; i < data.response.docs.length; i++) {
                 var createTableRow = document.createElement('tr');
                 var tableData = document.createElement('td');
@@ -27,9 +29,14 @@ function getApi() {
 }
 fetchButton.addEventListener('click', getApi);
 
-//var dateInput = querySelector.input {
-  //  var date: data.response.docs[i].pub_date;
-//}
+
+ 
+
+
+
+
+
+
 
 
 

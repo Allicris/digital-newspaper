@@ -4,26 +4,26 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fetch Demo</title>
+    <title>Digital Newspaper</title>
     <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body class="min-100-vh flex-column">
     <header class="p-5 text-center text-white bg-primary">
-        <h1>New york times API test</h1>
+        <h1>Digital Newspaper</h1>
     </header>
     <main class="flex-row justify-center align-center col-auto p-4 bg-light">
         <section class="card card-rounded col-7 bg-white">
             <header class="card-header text-center">
                 <h2 class="text-white">
-                    Fetch Test
+                    Your News
                 </h2>
             </header>
             <div class="text-center pt-4">
-                <label for="start">Start date:</label>
+                <label for="start">Choose a Date:</label>
                 <input type="date" id="start" name="trip-start" value="YYYY-MM-DD" min="1700-01-01" max="2025-12-31">
                 <button class="btn btn-danger" id="fetch-button">
-                    Click Me
+                    Search
                 </button>
             </div>
             <table class="card-body table mx-auto my-4">
