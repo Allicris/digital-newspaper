@@ -5,33 +5,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Digital Newspaper</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
 
-<body class="min-100-vh flex-column">
-    <header class="p-5 text-center text-white bg-primary">
-        <h1>Digital Newspaper</h1>
+<body>
+    <header>
+        <h1 class="box has-background-link-dark has-text-centered has-text-white has-text-weight-bold is-size-1 mt-5 ml-5 mr-5">Your Digital Newspaper</h1>
     </header>
-    <main class="flex-row justify-center align-center col-auto p-4 bg-light">
-        <section class="card card-rounded col-7 bg-white">
-            <header class="card-header text-center">
-                <h2 class="text-white">
+    <main>
+        <section>
+            <header class="columns is-centered">
+                <h2 class="column box is-size-3 is-6 is-rounded has-background-primary-dark has-text-centered has-text-white has-text-weight-bold mt-6">
                     Your News
                 </h2>
             </header>
-            <div class="text-center pt-4">
+            <div class = "columns is-centered">
+            <div class="column box is-size-3 is-6 is-centered is-rounded is-half has-background-primary-dark has-text-centered has-text-white has-text-weight-bold mt-5">
                 <label for="start">Choose a Date:</label>
                 <input type="date" id="start" name="trip-start" value="YYYY-MM-DD" min="1700-01-01" max="2025-12-31">
-                <button class="btn btn-danger" id="fetch-button">
+                <button class="button has-background-danger has-text-centered has-text-white has-text-weight-bold" id="fetch-button">
                     Search
                 </button>
             </div>
-            <table class="card-body table mx-auto my-4">
+            </div>
+        <div class="table-container is-centered ml-3 mr-3">
+            <table class="table is-centered is-bordered is-hoverable is-fullwidth has-background-link-light ">
                 <th>
-                    <p class="my-4">Results</p>
+                    <p class="has-text-link-dark has-text-weight-bold is-size-4">Results</p>
                 </th>
-                <tbody id="repo-table" class="mx-auto text-center"></tbody>
+                <tbody id="repo-table" class=""></tbody>
             </table>
+        </div>
         </section>
         <script src="./script.js"></script>
     </main>
