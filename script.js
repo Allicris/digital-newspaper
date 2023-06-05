@@ -23,7 +23,7 @@ function getApi() {
         var link = document.createElement("a");
         link.textContent = data.response.docs[i].headline.main;
         link.href = data.response.docs[i].web_url;
-        //this opens links in new tab, we had trouble saving both div to local storage and rendering them when navigation through websites.
+        //this opens links in new tab, we had trouble saving both divs to local storage and rendering them when navigating through browser.
         link.target = "_blank";
         tableData.appendChild(link);
         var slicedData = data.response.docs[i].headline.main.substring(0, 30);
