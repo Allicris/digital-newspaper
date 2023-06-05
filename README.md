@@ -34,6 +34,6 @@ Our second success and challenge was figuring out how to use a new CSS framework
 
 # Our Emails
 * Allison: serranoallison66@gmail.com
-* Jonathan: 
+* Jonathan: jtsterlin@yahoo.com
 * Akash: patel.akash30@icloud.com
 * Dimitri: dimitriwiggins@gmail.com
