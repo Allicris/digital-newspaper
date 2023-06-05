@@ -23,7 +23,7 @@ function getApi() {
         var link = document.createElement("a");
         link.textContent = data.response.docs[i].headline.main;
         link.href = data.response.docs[i].web_url;
-        //this opens links in new tab
+        //this opens links in new tab, we had trouble saving both div to local storage and rendering them when navigation through websites.
         link.target = "_blank";
         tableData.appendChild(link);
         var slicedData = data.response.docs[i].headline.main.substring(0, 30);
@@ -79,7 +79,7 @@ function addFavorite() {
   localStorage.setItem("favorited", JSON.stringify(favorites));
   this.disabled = true;
   
- 
+ // creates table row and links the url of articles saved in local storage, it then renders them onto the "favorite" div.
   var favoritesDiv = document.getElementById('favorites-table');
   var linkElement = document.createElement('a');
   var newRow = favoritesDiv.insertRow();

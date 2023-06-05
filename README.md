@@ -32,4 +32,8 @@ Our second success and challenge was figuring out how to use a new CSS framework
 
 ![APP SCREENSHOT](./images/ss3.png)
 
-
+# Our Emails
+* Allison: serranoallison66@gmail.com
+* Jonathan: 
+* Akash: patel.akash30@icloud.com
+* Dimitri: dimitriwiggins@gmail.com
