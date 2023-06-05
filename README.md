@@ -24,6 +24,9 @@ Our second success and challenge was figuring out how to use a new CSS framework
 * Add option to email links to users for ease of access and sharing options.
 * Add filters for gif searches to refine the GIF searches, making them more relevant.
 
+## Website
+* link: https://allicris.github.io/digital-newspaper/ 
+
 ## Credits
 * We couldn't have completed this project without the resources that we were given from the bootcamp and the knowledge that we have gained from being taught by Rommel and Ringo. We also recieved help from Rutgers bootcamps tutors and substitute TA's. 
 
